@@ -1,0 +1,84 @@
+.search{
+    position: relative;
+    background-color: white;
+    /* height: 30px; */
+    border: 3px solid #9FAD43;
+    padding: 10px 2px 10px 2px;
+    /* margin: 50px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+.searchAddressInput{
+    position: relative;
+    border: none;
+    width: 400px;
+}
+
+.Icon{
+    color: #9FAD43;
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+.searchNameInput{
+    border: none;
+    width: 200px;
+}
+.searchDateInput{
+    border: none;
+    width: 200px;
+}
+.date{
+    position: absolute;
+    top: 200px;
+}
+.buttonSearch{
+    background-color: #2F4858;
+    color: #F1F4CC;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+}
+.buttonExport{
+    position: absolute;
+    right: 50px;
+    top: 200px;
+    background-color: #2F4858;
+    color: #F1F4CC;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+}
+.floatingbutton{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.button{
+    margin-left: 20px;
+    border: none;
+    width: 150px;
+    padding: 10px 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 20px;
+    background-color: #007D5D;
+}
+.autocomplete-dropdown-container {
+    position: absolute ;
+    top: calc(100% + 5px);
+    left: 115px ;
+    z-index: 999 ;
+    /* background-color: #fff; */
+    border: 1px solid #9FAD43;
+    max-height: 100px;
+    overflow-y: auto;
+    width: 400px;
+    margin-left: 5px;
+  }

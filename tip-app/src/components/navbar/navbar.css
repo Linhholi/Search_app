@@ -1,0 +1,40 @@
+.navbar{
+   background-color: #005B4C;
+   justify-content: center;
+   width: 100%;
+   display: block;
+   flex-direction: column;
+   padding: 30px 30px 10px 30px;
+}
+
+.navContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;  
+}
+
+.logo{
+    font-weight: 700;
+    color: #F1F4CC;
+    font-size: 200%;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+.navItems{
+    background-color: #005B4C;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    
+}
+
+.navButton{
+    margin-left: 20px;
+    border: none;
+    width: 150px;
+    padding: 10px 10px;
+    cursor: pointer;
+    color: #007D5D;
+    border-radius: 20px;
+}

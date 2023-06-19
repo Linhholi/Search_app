@@ -1,0 +1,18 @@
+.bigbody{
+    display: block;
+    padding: 50px 20px 20px 20px;
+    justify-content: center;
+}
+.body::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+.picture{
+    float: left;
+    width: 45%;
+    padding: 5px;
+}
+h1 {
+    text-align: center;
+  }
