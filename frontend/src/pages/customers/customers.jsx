@@ -33,15 +33,6 @@ const Customers = () => {
   const [query_address, setQuery_address] = useState("");
   const [query_name, setQuery_name] = useState("");
   const [query_date, setQuery_date] = useState("");
-  const [filteredCustomers, setFilteredCustomers] = useState(customers);
-
-  const handleSelect = (address) => {
-    setQuery_address(address);
-  };
-
-  const handleChange = (address) => {
-    setQuery_address(address);
-  };
 
   const search = (data) => {
 
