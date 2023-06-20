@@ -3,7 +3,6 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Form from 'react-bootstrap/Form';
 import DatePicker from "react-datepicker";
-import PlacesAutocomplete from 'react-places-autocomplete';
 
 const CreateNewForm = (props) => {
     const [formValues, setFormValues] = useState({
