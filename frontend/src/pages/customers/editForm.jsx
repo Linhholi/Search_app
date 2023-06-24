@@ -7,7 +7,7 @@ import DatePicker from "react-datepicker";
 const EditForm = (props) => {
     let startDate = new Date();
     if (props.customer != null) {
-        const [dd, mm, yyyy] = props.customer?.purchase_date.split('/');
+        const [dd, mm, yyyy] = props.customer?.purchase_date.split('-');
         startDate = new Date(`${yyyy}/${mm}/${dd}`);
     }
 
