@@ -49,7 +49,7 @@ const CreateNewForm = (props) => {
             directly_sold: formValues.directly_sold
         };
 
-        fetch('http://localhost:3001/api/new-csv', {
+        fetch('https://linh-react-backend.onrender.com/api/new-csv', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
