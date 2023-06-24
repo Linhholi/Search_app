@@ -141,7 +141,6 @@ app.post('/api/new-csv', (req, res) => {
 
 
     });
-});
 
 
 // Start the server
