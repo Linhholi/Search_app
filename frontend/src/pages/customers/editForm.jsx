@@ -73,7 +73,7 @@ const EditForm = (props) => {
             directly_sold: formValues.directly_sold
         };
 
-        fetch('http://localhost:3001/api/update-csv', {
+        fetch('https://linh-react-backend.onrender.com/api/update-csv', {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
