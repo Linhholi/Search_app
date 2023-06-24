@@ -1,1 +1,1 @@
-Link to the app: https://linh-react-app.onrender.com
+Link to the app: https://linh-react.onrender.com/
