@@ -7,7 +7,7 @@ const Navbar = () => {
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
         <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap"/>
-            <span className="logo">4CORP</span>
+            <span className="logo">LINH NGUYEN</span>
         </div>
         <div className="navItems">
           <Link to='/'><button className="navButton">Home</button></Link>
