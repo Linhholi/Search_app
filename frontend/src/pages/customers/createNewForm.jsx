@@ -96,6 +96,14 @@ const CreateNewForm = (props) => {
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
                         <Form.Label>Address</Form.Label>
+                        <Form.Control
+                            type="text"
+                            placeholder="123 Melbourne"
+                            name='address'
+                            value={formValues.address}
+                            onChange={handleInputNew}
+                            autoFocus
+                        />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput3">
                         <Form.Label>Email</Form.Label>
