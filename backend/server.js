@@ -48,12 +48,6 @@ app.put('/api/update-csv', (req, res) => {
         Object.assign(recordToUpdate, req.body);
       }
 
-      getLatLngFromAddress(req.body.address)
-        .then(({ lat, lng }) => {
-
-          recordToUpdate.latitude = lat;
-          recordToUpdate.longitude = lng;
-
           const csvWriter = createCsvWriter({
             path: csvFilePath,
             header: [
@@ -63,15 +57,11 @@ app.put('/api/update-csv', (req, res) => {
               { id: 'active', title: 'active' },
               { id: 'directly_sold', title: 'directly_sold' },
               { id: 'address', title: 'address' },
-              { id: 'suburb', title: 'suburb' },
-              { id: 'postcode', title: 'postcode' },
               { id: 'tunning_date', title: 'tunning_date' },
               { id: 'brand', title: 'brand' },
               { id: 'model', title: 'model' },
               { id: 'type', title: 'type' },
-              { id: 'email', title: 'email' },
-              { id: 'latitude', title: 'latitude' },
-              { id: 'longitude', title: 'longitude' }
+              { id: 'email', title: 'email' }
             ]
           });
 
@@ -114,12 +104,6 @@ app.post('/api/new-csv', (req, res) => {
         res.status(500).send(JSON.stringify({ "result": "warning", "error": "Cannot insert customer with same Username/Id" }));
         return;
       }
-
-      getLatLngFromAddress(req.body.address)
-        .then(({ lat, lng }) => {
-          record.latitude = lat;
-          record.longitude = lng;
-
           const lastId = results.length > 0 ? parseInt(results[results.length - 1].id) : 0;
           const newId = lastId + 1;
           record.id = newId.toString();
@@ -134,15 +118,11 @@ app.post('/api/new-csv', (req, res) => {
               { id: 'active', title: 'active' },
               { id: 'directly_sold', title: 'directly_sold' },
               { id: 'address', title: 'address' },
-              { id: 'suburb', title: 'suburb' },
-              { id: 'postcode', title: 'postcode' },
               { id: 'tunning_date', title: 'tunning_date' },
               { id: 'brand', title: 'brand' },
               { id: 'model', title: 'model' },
               { id: 'type', title: 'type' },
-              { id: 'email', title: 'email' },
-              { id: 'latitude', title: 'latitude' },
-              { id: 'longitude', title: 'longitude' }
+              { id: 'email', title: 'email' }
             ]
 
           });
@@ -160,23 +140,6 @@ app.post('/api/new-csv', (req, res) => {
         });
 
 
-    });
-});
-
-app.get('/api/get-addresses', (req, res) => {
-  const addresses = [];
-
-  fs.createReadStream(csvFilePath)
-    .pipe(csv())
-    .on('data', (row) => {
-      addresses.push({
-        address: row.address,
-        lat: row.latitude,
-        lng: row.longitude
-      });
-    })
-    .on('end', () => {
-      res.json({ addresses });
     });
 });
 
