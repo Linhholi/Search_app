@@ -70,7 +70,7 @@ const Customers = () => {
   }
 
   const fetchData = async () => {
-    const response = await axios.get('http://localhost:3000/api/get-customers');
+    const response = await axios.get('https://linh-search-backend.onrender.com/api/get-customers');
     setData(response.data)
   };
 
