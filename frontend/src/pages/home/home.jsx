@@ -9,7 +9,7 @@ const Home = () => {
         <div className="bigbody">
             <h1>What would you like to do today?</h1>
             <div className="body">
-                <a href="https://linh-introduction.onrender.com/">
+                <a href="https://linh-search.onrender.com/">
                 <img alt="" className="picture" src="https://searchengineland.com/wp-content/seloads/2014/08/map-local-search-ss-1920.jpg" />
                 </a>
                 <a href="/customers">
